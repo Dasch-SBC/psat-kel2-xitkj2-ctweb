@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hasil Pencarian | CT WEB</title>
+  <link rel="stylesheet" href="styleAwal.css">
+   <!--font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body class="body-search">
+  <div class="container-searchpage">
+    <img class="konten-404" src="Images/404.(2).gif" alt=""><br>
+    <h2>HASIL PENCARIAN TIDAK DITEMUKAN</h2><br>
+    <h1 class="txt-404">4<span>0</span>4</h1>
+    <p id="result"></p><br>
+    <button class="Tombol-404" onclick="window.location.href='AfterLogin.html'">
+      <i class="fa-solid fa-reply"></i><span class="txt-back">Kembali</span>
+    </button>
+  <script>
+    // Ambil query dari URL
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q');
+    const result = document.getElementById('result');
+
+    // Daftar kata kunci dan halaman tujuan
+    const keywordMap = {
+          'tentang': 'About.html',
+          'Tentang': 'About.html',
+          'TENTANG': 'About.html',
+          'berita': 'News.html',
+          'Berita': 'News.html',
+          'BERITA': 'News.html',
+          'topup': 'TopUp.html',
+          'TopUp': 'TopUp.html',
+          'TOPUP': 'TopUp.html',
+          'Topup': 'TopUp.html',
+          'Top Up': 'TopUp.html',
+          'top up': 'TopUp.html',
+          'layanan': 'index.html#layanan',
+          'Layanan': 'index.html#layanan',
+          'LAYANAN': 'index.html#layanan',
+          'beranda': 'AfterLogin.html',
+          'Beranda': 'AfterLogin.html',
+          'BERANDA': 'AfterLogin.html',
+          'Tips & Tricks': 'AfterLogin.html#services',
+          'tips & tricks': 'AfterLogin.html#services',
+          'TIPS & TRICKS': 'AfterLogin.html#services',
+          'freegames': 'AfterLogin.html#services',
+          'Freegames': 'AfterLogin.html#services',
+          'FREEGAMES': 'AfterLogin.html#services',
+          'jockey': 'AfterLogin.html#services',
+          'Jockey': 'AfterLogin.html#services',
+          'JOCKEY': 'AfterLogin.html#services',
+          'competition': 'AfterLogin.html#services',
+          'Competition': 'AfterLogin.html#services',
+          'COMPETITION': 'AfterLogin.html#services',
+    };
+
+    if(q) {
+      // Cek apakah kata kunci cocok dengan salah satu halaman
+      let found = false;
+      for (const key in keywordMap) {
+        if (q.toLowerCase().includes(key)) {
+          window.location.href = keywordMap[key];
+          found = true;
+          break;
+        }
+      }
+      if (!found) {
+        result.textContent = 'Kata kunci: ' + q + ' tidak ditemukan.';
+      }
+    } else {
+      result.textContent = 'Tidak ada kata kunci pencarian.';
+    }
+  </script>
+</body>
+</html>

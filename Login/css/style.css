@@ -1,0 +1,1094 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Tombol back*/
+.Tombol-back-css {
+  position: absolute;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  left: 20px;
+  background-color: orangered;
+  color: #fff;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1050;
+  transition: background 0.2s, border 0.2s;
+}
+.Tombol-back-css:hover {
+  background-color: #273F4F;
+  border-color: white;
+}
+.txt-back{
+    padding-left: 10px;
+}
+
+/*style untuk navbar*/
+#navbar{
+    background: orangered;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: #273F4F;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: white;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link:hover{
+    background: #273F4F;
+    color: white;
+}
+#navbar form button{
+    background: #273F4F;
+    color: white;
+    border: none;
+}
+
+.Search:hover{
+    background: #273F4F;
+    color: white;
+}
+
+
+
+/*style untuk home*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10%);
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: #273F4F;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+}
+
+.welcomeTo{
+  color: white;
+}
+
+.CTcolor{
+  color: orangered;
+}
+
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: orangered;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: "Moba";}
+    10%{content: "Action Game";}
+    20%{content: "First Person Shooter (FPS)";}
+    30%{content: "Real Time Strategy (RTS)";}
+    40%{content: "Role Playing Game (RPG)";}
+    50%{content: "Adventure";}
+    60%{content: "Simulation";}
+    70%{content: "Sports";}
+    80%{content: "Sandbox";}
+    90%{content: "Racing";}
+    100%{content: "Survival";}
+} 
+.home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 550;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.home .content a:hover{
+    background: orangered;
+    color: white;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+
+
+/*style untuk Services*/
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+    max-height: 190vh;
+}
+
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+    color: #273F4F;
+}
+.main-text h1 span{
+    color: orangered;
+}
+
+.services .card{
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.services .card:hover{
+    background: #273F4F;
+    color: white;
+    transition:0.5s ease;
+}
+.services .card i{
+    font-size: 80px;
+    text-align: center;
+    color: orangered;
+    margin-top: 20px;
+}
+
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+
+/*style untuk bagian Topup*/
+.body-topup{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+}
+.main-txt h1 span{
+    color: orangered;
+}
+.TopUp .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.TopUp .card img{
+    border-radius: 5px;
+}
+.TopUp .card .card-body{
+    background: transparent;
+}
+.TopUp .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.TopUp .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: orangered;
+}
+
+.TopUp .card .card-body h6{
+    font-size: 20px;
+}
+.TopUp .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: orangered;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/*Style Bagian Footer*/
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: orangered;
+    height: 45vh;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #f9f9f9;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #273F4F;
+}
+
+
+
+/*style untuk bagian halaman About*/
+.body-about{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+}
+.main-txt h1 span{
+    color: orangered;
+}
+
+.About .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.About .card img{
+    border-radius: 5px;
+}
+.About .card .card-body{
+    background: transparent;
+}
+.About .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.About .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: orangered;
+}
+
+.About .card .card-body h6{
+    font-size: 20px;
+}
+.About .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: orangered;
+    color: white;
+    border-radius: 5px;
+}
+
+/*style untuk bagian news*/
+.body-news{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+}
+.main-txt h1 span{
+    color: orangered;
+}
+
+.body-news .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(3, 3, 3, 0.1) 20px 4px 20px;
+    background-color: orangered;
+}
+.body-news .card img{
+    border-radius: 5px;
+}
+.body-news .card .card-body{
+    background: transparent;
+}
+.body-news .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.body-news .card .card-body p{
+    font-size: 15px;
+}
+.checked{
+    color: orangered;
+}
+
+.body-news .card .card-body h6{
+    font-size: 20px;
+}
+.body-news .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: orangered;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+/*style untuk bagian halaman search*/
+.container-searchpage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.body-search{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #273F4F;
+    color: white;
+}
+
+.txt-404{
+    font-size: 100px;
+    color: orangered;
+}
+
+.txt-404 span{
+    color: white
+}
+
+.konten-404{
+    height: 250px;
+}
+
+.Tombol-404 {
+  background-color: orangered;
+  color: #fff;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1050;
+  transition: background 0.2s, border 0.2s;
+}
+.Tombol-404:hover {
+  background-color: white;
+  border-color: orangered;
+  color: orangered;
+}
+.txt-back{
+    padding-left: 10px;
+}
+
+
+/*style untuk bagian freegames dan isinya*/
+.body-freegames{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+}
+.main-txt h1 span{
+    color: orangered;
+}
+
+.FreeGames .card{
+    text-align: justify;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    text-align: justify;
+}
+.FreeGames .card img{
+    border-radius: 5px;
+}
+.FreeGames .card .card-body{
+    background: transparent;
+    text-align: justify;
+}
+.FreeGames .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.FreeGames .card .card-body p{
+    font-size: 15px;
+    text-align: justify;
+}
+.checked{
+    color: orangered;
+}
+
+.FreeGames .card .card-body h6{
+    font-size: 20px;
+}
+
+.tombol-selengkapnya {
+  background-color: orangered;
+  color: #fff;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+.tombol-selengkapnya:hover {
+  background-color: #273F4F;
+  border-color: white;
+}
+
+/*style untuk FCmobile html*/
+.body-FCMobile{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-FCMobile .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-FCMobile .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk ML html*/
+.body-MobileLegend{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-MobileLegend .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-MobileLegend .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk Free Fire html*/
+.body-FreeFire{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-FreeFire .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-FreeFire .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk call of duty html*/
+.body-call-of-duty{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-call-of-duty .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-call-of-duty .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk genshin html*/
+.body-genshin{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-genshin .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-genshin .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk PUBG html*/
+.body-PUBG{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-PUBG .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-PUBG .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk efootball html*/
+.body-efootball{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-efootball .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-efootball .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk bus simulator html*/
+.body-bus-simulator{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-bus-simulator .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-bus-simulator .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk minecraft html*/
+.body-minecraft{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-minecraft .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-minecraft .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+
+
+
+
+
+
+                                    /*style untuk bagian competition dan isinya*/
+
+/*style untuk bagian Infogames*/
+.body-tipsgames{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+}
+.main-txt h1 span{
+    color: orangered;
+}
+
+.body-tipsgames .card{
+    text-align: justify;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+    text-align: justify;
+}
+.body-tipsgames .card img{
+    border-radius: 5px;
+}
+.body-tipsgames .card .card-body{
+    background: transparent;
+    text-align: justify;
+}
+.body-tipsgames .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.body-tipsgames .card .card-body p{
+    font-size: 15px;
+    text-align: justify;
+}
+.checked{
+    color: orangered;
+}
+
+.body-tipsgames .card .card-body h6{
+    font-size: 20px;
+}
+
+.tombol-selengkapnya {
+  background-color: orangered;
+  color: #fff;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+.tombol-selengkapnya:hover {
+  background-color: #273F4F;
+  border-color: white;
+}
+
+/*style untuk FCMobileinfo html*/
+.body-FCMobileinfo{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-FCMobileinfo .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-FCMobileinfo .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk MLinfo html*/
+.body-MLinfo{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-MLinfo .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-MLinfo .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+/*style untuk ffinfo, info dll html*/
+.body-ffinfo{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.body-ffinfo .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-ffinfo .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+
+
+
+
+
+                                    /*style untuk bagian competition dan isinya*/
+
+/*style untuk bagian competition*/
+.body-Competition{
+    width: 100%;
+    height: 100%;
+ background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+}
+.main-txt h1 span{
+    color: orangered;
+}
+
+.body-Competition .card{
+    text-align: justify;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.body-Competition .card img{
+    border-radius: 5px;
+}
+.body-Competition .card .card-body{
+    background: transparent;
+    text-align: justify;
+}
+.body-Competition .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.body-Competition .card .card-body p{
+    font-size: 15px;
+    text-align: justify;
+}
+.checked{
+    color: orangered;
+}
+
+.body-Competition .card .card-body h6{
+    font-size: 20px;
+}
+
+.tombol-selengkapnya {
+  background-color: orangered;
+  color: #fff;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+.tombol-selengkapnya:hover {
+  background-color: #273F4F;
+  border-color: white;
+}
+
+/*style untuk FC MobileCompe*/
+.body-FCMobileCompe{
+    width: 100%;
+    height: 100%;
+ background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-FCMobileCompe .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+
+.body-FCMobileCompe .card img {
+    border-radius: 5px;
+    max-height: 30%;
+}
+
+
+
+
+                                    /*style untuk bagian Jockey dan isinya*/
+/*style untuk bagian Jockey*/
+.body-Jockey{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    color: white;
+}
+.main-txt h1 span{
+    color: orangered;
+}
+
+.body-Jockey .card{
+    text-align: justify;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
+.body-Jockey .card img{
+    border-radius: 5px;
+}
+.body-Jockey .card .card-body{
+    background: transparent;
+    text-align: justify;
+}
+.body-Jockey .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.body-Jockey .card .card-body p{
+    font-size: 15px;
+    text-align: justify;
+}
+.checked{
+    color: orangered;
+}
+
+.body-Jockey .card .card-body h6{
+    font-size: 20px;
+}
+
+.tombol-selengkapnya {
+  background-color: orangered;
+  color: #fff;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+}
+.tombol-selengkapnya:hover {
+  background-color: #273F4F;
+  border-color: white;
+}
+
+/*style untuk FCM joki*/
+.body-FCMJoki{
+    width: 100%;
+    height: 100%;
+ background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(/ct\ web\ EDITING/Awal/background\ ct\ web.jpg);    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-FCMJoki .card {
+    text-align: justify;
+    max-width: 90%;
+    padding-top: 10px;
+    margin-top: 35px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+}
